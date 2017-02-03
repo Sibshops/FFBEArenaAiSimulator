@@ -1,0 +1,30 @@
+#include "../stats/BattleStats.hpp"
+#include "Ability.hpp"
+
+#ifndef GENERIC_SUPPORT_HPP
+#define GENERIC_SUPPORT_HPP
+
+class GenericSupport : public Ability
+{
+public:
+  GenericSupport(std::string name)
+    : Ability(name)
+  {}
+  
+  bool IsSupport() const override { return true; };
+};
+
+static const GenericSupport Advance("Advance");
+static const GenericSupport Protect("Protect");
+static const GenericSupport Protectga("Protectga");
+static const GenericSupport OmniVeil("OmniVeil");
+static const GenericSupport Comeback("Comeback");
+static const GenericSupport Faith("Faith");
+static const GenericSupport Store("Store");
+static const GenericSupport Focus("Focus");
+static const GenericSupport Shell("Shell");
+static const GenericSupport SongOfAttack("Song of Attack");
+static const GenericSupport HeartOfLight("Heart of Light");
+
+
+#endif
