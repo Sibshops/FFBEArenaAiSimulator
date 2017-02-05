@@ -19,7 +19,7 @@
 std::vector<Esper> Esper::GetEspers()
 {
   std::vector<Esper> espers;
-  espers.push_back(Esper::CreateEmpty());
+  //   espers.push_back(Esper::CreateEmpty());
   espers.push_back(Esper::CreateSiren());
   espers.push_back(Esper::CreateIfrit());
   espers.push_back(Esper::CreateGolem());

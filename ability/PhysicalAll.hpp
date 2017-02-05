@@ -37,7 +37,7 @@ static const PhysicalAll HitAll("HitAll", 1.8);
 static const PhysicalAll AutoBowgun("AutoBowgun", 1.3);
 static const PhysicalAll Darkside("Darkside", 1.5);
 static const PhysicalAll Scattershot("Scattershot", 1.1);
-static const PhysicalAll Multiburst("Multiburst", 1.1);
+static const PhysicalAll Multiburst("Multiburst", 1.5);
 static const PhysicalAll Bladeblitz("Bladeblitz", 1.4);
 static const PhysicalAll AreaBlast("AreaBlast", 1.8);
 

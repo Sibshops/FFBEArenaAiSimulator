@@ -20,6 +20,13 @@ public:
     m_Rules.insert(rule);
   }
 
+  Ability(std::string name, RuleVector rules)
+    : m_Name(name)
+  {
+    for (auto rule : rules)
+      m_Rules.insert(rule);
+  }
+
 
   virtual bool IsBanned(const Rules rules) const; 
   virtual bool IsOffensive() const { return false; };

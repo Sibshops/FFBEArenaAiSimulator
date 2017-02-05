@@ -6,8 +6,8 @@
 
 const int NUMBER_OF_ENEMY_UNITS = 5;
 const int MAX_DAMAGE = 999;
-const int ENEMY_DEF = 250;
-const int ENEMY_SPR = 250;
+const int ENEMY_DEF = 300;
+const int ENEMY_SPR = 300;
 
 class BattleStats
 {

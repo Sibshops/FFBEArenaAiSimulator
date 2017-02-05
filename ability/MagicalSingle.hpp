@@ -20,6 +20,12 @@ public:
   {
   }
 
+  MagicalSingle(std::string name, float multiplier, RuleVector rules)
+    : Ability(name, rules),
+      m_Multiplier(multiplier)
+  {
+  }
+
   bool IsOffensive() const override { return true; };
 
   // Calculate average offensive damage. Assume 1 DEF.
@@ -38,22 +44,25 @@ private:
 
 // CutThrough 2.5 * 1.33
 
+static const MagicalSingle Aero("Aero", 1.2, {Rule::BlackMagic, Rule::Wind});
 static const MagicalSingle Banish("Banish", 1.2);
-static const MagicalSingle Bio("Bio", 1.2, Rule::StatusAilment);
+static const MagicalSingle Bio("Bio", 1.2, {Rule::StatusAilment,Rule::BlackMagic} );
 static const MagicalSingle Blind("Blind", 0.0);
-static const MagicalSingle Blizzard("Blizzard", 1.2);
+static const MagicalSingle Blizzard("Blizzard", 1.2, {Rule::BlackMagic});
+static const MagicalSingle Comet("Comet", 1.6, {Rule::BlackMagic});
 static const MagicalSingle Deprotect("Deprotect", 0.0);
 static const MagicalSingle Deshell("Deshell", 0.0);
-static const MagicalSingle Drain("Drain", 0.8);
+static const MagicalSingle Drain("Drain", 0.8, {Rule::BlackMagic});
 static const MagicalSingle Elementalash("Elementalash", 1.8);
-static const MagicalSingle Fire("Fire", 1.2);
+static const MagicalSingle Fire("Fire", 1.2, {Rule::BlackMagic});
 static const MagicalSingle Imperil("Imperil", 0.0);
 static const MagicalSingle MagicShot("MagicShot", 1.2);
-static const MagicalSingle Osmose("Osmose", 0.0);
+static const MagicalSingle Osmose("Osmose", 0.0, {Rule::BlackMagic});
+static const MagicalSingle Flare("Flare", 2.3, {Rule::BlackMagic});
 static const MagicalSingle Silence("Silence", 0.0, Rule::StatusAilment);
 static const MagicalSingle Sleep("Sleep", 0.0, Rule::StatusAilment);
-static const MagicalSingle Stone("Stone", 1.2);
-static const MagicalSingle Thunder("Thunder", 1.2);
-static const MagicalSingle Water("Water", 1.2, Rule::Water);
+static const MagicalSingle Stone("Stone", 1.2, {Rule::BlackMagic});
+static const MagicalSingle Thunder("Thunder", 1.2, {Rule::BlackMagic});
+static const MagicalSingle Water("Water", 1.2, {Rule::BlackMagic, Rule::Water});
 
 #endif

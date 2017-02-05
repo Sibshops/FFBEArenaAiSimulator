@@ -39,7 +39,8 @@ private:
 };
 
 static const HybridSingle WindShear("Wind Shear", 5.4);
-static const HybridSingle DrainBladeHybrid("Drain Blade Hybrid", 5.4);
+static const HybridSingle DrainBladeHybrid("Drain Blade Hybrid", 1.4);
+static const HybridSingle OsmoseBladeHybrid("Osmose Blade Hybrid", 1.4);
 
 
 #endif

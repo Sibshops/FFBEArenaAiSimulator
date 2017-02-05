@@ -57,6 +57,7 @@ static const PhysicalSingle CallOfTheVoid("Call of the Void", 2.1/(1.0-0.25), 1)
 static const PhysicalSingle CutThrough("CutThrough", 2.5*1.33, 1);
 static const PhysicalSingle DivingStrike("DivingStrike", 2.3, 1);
 static const PhysicalSingle DrainBladePhysical("Drain Blade Physical", 0.8, 1);
+static const PhysicalSingle OsmoseBladePhysical("Osmose Blade Physical", 0.3, 1);
 static const PhysicalSingle Drainlash("Drainlash", 0.8, 1);
 static const PhysicalSingle Flamelash("Flamelash", 2.2, 1);
 static const PhysicalSingle Frostlash("Frostlash", 2.2, 1);

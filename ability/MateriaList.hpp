@@ -9,5 +9,7 @@
 
 std::vector<const Ability*> GetMateria();
 
+std::vector<const Ability*> GetNextMateria();
+
   
 #endif

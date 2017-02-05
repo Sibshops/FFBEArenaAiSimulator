@@ -384,6 +384,11 @@ BattleResults Unit::CalculateBattleResults(const BattleStats bs)
 	  // std::cout << "Damage = " << damage << std::endl;
 	  totalDamage += damage;
 	  ++count;
+	  if (damage > battleResults.StrongestAbilityDamage)
+	    {
+	      battleResults.StrongestAbilityDamage = damage;
+	      battleResults.StrongestAbility = ability->m_Name;
+	    }
 	}
       else if (ability->IsSupport())
 	{

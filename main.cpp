@@ -36,14 +36,16 @@ void CalculateUnit(Unit& unit,
 			  BattleStats battleStats = currUnit.CalculateBattleStats();
 			  BattleResults battleResults = currUnit.CalculateBattleResults(battleStats);
 			  			  
-			  std::cout << battleResults.CalculateOffensiveAIDamage() << " " << unit.m_Name << " "
-				    << esper.m_Name << " "
-				    << Materia[a]->m_Name << " "
-				    << Materia[b]->m_Name << " "
-				    << Materia[c]->m_Name << " "
-				    << Materia[d]->m_Name << " "
-				    << std::endl;
-			  
+			  std::cout
+			    << battleResults.CalculateOffensiveAIDamage()
+			    << " " << unit.m_Name << " "
+			    << esper.m_Name << " "
+			    << Materia[a]->m_Name << " "
+			    << Materia[b]->m_Name << " "
+			    << Materia[c]->m_Name << " "
+			    << Materia[d]->m_Name << " "
+			    << battleResults.StrongestAbilityDamage << " " << battleResults.StrongestAbility 
+				    << std::endl;			  
 			}
 		    }
 		}
@@ -56,7 +58,8 @@ void CalculateUnit(Unit& unit,
 
 int OffensiveDamage()
 {
-  Rules rules = {Rule::Water, Rule::StatusAilment};
+  Rules rules = {Rule::BlackMagic, Rule::Wind};
+  //Rules rules;
 
   std::vector<Unit> units;
   // No

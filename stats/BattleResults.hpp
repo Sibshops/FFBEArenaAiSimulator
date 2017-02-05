@@ -16,6 +16,9 @@ public:
 
   int NormalAttackDamage = 0;
 
+  std::string StrongestAbility;
+  int StrongestAbilityDamage = 0;
+  
   int CalculateOffensiveAIDamage() const;
   
   std::string ToString() const;
